@@ -8,6 +8,17 @@
   </head>
   <body>
     <main class="presentation" id="presentation" aria-live="polite">
+      <section class="panel panel-intro" id="section-intro" data-label="Intro">
+        <div class="hero-wrap">
+          <div class="hero-static-screen">
+            <img src="assets/brand_logo.jpg" alt="HALina Logo" class="hero-logo" />
+          </div>
+          <video class="hero-video-bg" autoplay loop muted playsinline>
+            <source src="assets/hero/Badaniomat_intro_hero.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
       <section class="panel panel-a" id="section-a" data-label="A">
         <div class="section-content intro-content">
           <div class="hero-video-frame" aria-label="Animacja logo HALina">
@@ -18,16 +29,16 @@
           <div class="agenda-panel">
             <h1 class="agenda-title">Agenda</h1>
             <nav class="section-menu" aria-label="Agenda prezentacji">
-              <button class="is-hidden" type="button" data-target="0">A</button>
-              <button type="button" data-target="1">Kim jesteśmy</button>
-              <button type="button" data-target="2">Świat przed e-przychodniami</button>
-              <button type="button" data-target="3">Świat z e-przychodniami</button>
-              <button type="button" data-target="4">Jak to działa</button>
-              <button type="button" data-target="5">Dlaczego właśnie my</button>
-              <button type="button" data-target="6">Na jakim jesteśmy etapie</button>
-              <button type="button" data-target="7">Co dalej</button>
-              <button type="button" data-target="8">Czego się nauczyliśmy</button>
-              <button type="button" data-target="9">Krótkie zakończenie</button>
+              <button class="is-hidden" type="button" data-target="1">Agenda</button>
+              <button type="button" data-target="2">Kim jesteśmy</button>
+              <button type="button" data-target="3">Świat przed e-przychodniami</button>
+              <button type="button" data-target="4">Świat z e-przychodniami</button>
+              <button type="button" data-target="5">Jak to działa</button>
+              <button type="button" data-target="7">Dlaczego właśnie my</button>
+              <button type="button" data-target="8">Na jakim jesteśmy etapie</button>
+              <button type="button" data-target="9">Co dalej</button>
+              <button type="button" data-target="10">Czego się nauczyliśmy</button>
+              <button type="button" data-target="11">Krótkie zakończenie</button>
             </nav>
           </div>
         </div>
@@ -439,7 +450,7 @@
           <div class="safety-grid" aria-label="Bezpieczeństwo w e-przychodni">
             <article class="safety-card">
               <div class="safety-video-wrap">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'%3E%3Crect width='1600' height='900' fill='%23e2e8f0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='42' fill='%2364748b' text-anchor='middle' dominant-baseline='middle'%3EMiejsce na wideo (16:9) - Dostęp biometryczny%3C/text%3E%3C/svg%3E" alt="Zastępcze wideo - Dostęp biometryczny" style="width: 100%; height: 100%; object-fit: cover;" />
+                <img src="assets/safety/Safety_1_biometric.gif" alt="Dostęp biometryczny" style="width: 100%; height: 100%; object-fit: cover;" />
               </div>
               <div class="safety-card-body">
                 <h3>Dostęp biometryczny</h3>
@@ -449,21 +460,21 @@
 
             <article class="safety-card">
               <div class="safety-video-wrap">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'%3E%3Crect width='1600' height='900' fill='%23e2e8f0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='42' fill='%2364748b' text-anchor='middle' dominant-baseline='middle'%3EMiejsce na wideo (16:9) - Prywatność%3C/text%3E%3C/svg%3E" alt="Zastępcze wideo - Prywatność" style="width: 100%; height: 100%; object-fit: cover;" />
+                <img src="assets/safety/Safety_3_encryption.gif" alt="Szyfrowanie danych" style="width: 100%; height: 100%; object-fit: cover;" />
               </div>
               <div class="safety-card-body">
-                <h3>Prywatność</h3>
-                <p>Podczas Twojej konsultacji wszystkie szklane powierzchnie kabiny stają się nieprzezroczyste (opaque). Twój komfort to nasz priorytet.</p>
+                <h3>Bezpieczeństwo danych</h3>
+                <p>Wszystkie dane pacjenta są rygorystycznie szyfrowane oraz anonimizowane. Twoja dokumentacja medyczzna jest chroniona na każdym etapie.</p>
               </div>
             </article>
 
             <article class="safety-card">
               <div class="safety-video-wrap">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'%3E%3Crect width='1600' height='900' fill='%23e2e8f0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='42' fill='%2364748b' text-anchor='middle' dominant-baseline='middle'%3EMiejsce na wideo (16:9) - Szyfrowanie danych%3C/text%3E%3C/svg%3E" alt="Zastępcze wideo - Szyfrowanie danych" style="width: 100%; height: 100%; object-fit: cover;" />
+                <img src="assets/safety/Safety_2_privacy.gif" alt="Prywatność" style="width: 100%; height: 100%; object-fit: cover;" />
               </div>
               <div class="safety-card-body">
-                <h3>Bezpieczeństwo danych</h3>
-                <p>Wszystkie dane pacjenta są rygorystycznie szyfrowane oraz anonimizowane. Twoja dokumentacja medyczzna jest chroniona na każdym etapie.</p>
+                <h3>Prywatność</h3>
+                <p>Podczas Twojej konsultacji wszystkie szklane powierzchnie kabiny stają się nieprzezroczyste (opaque). Twój komfort to nasz priorytet.</p>
               </div>
             </article>
           </div>

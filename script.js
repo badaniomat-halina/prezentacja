@@ -34,6 +34,14 @@ const quickNavButtons = {
   down: document.querySelector('[data-action="down"]'),
 };
 
+const heroVideoIntro = document.querySelector("#hero-video-intro");
+if (heroVideoIntro) {
+  // Synchronize video start with the CSS animation delay (5s)
+  setTimeout(() => {
+    heroVideoIntro.play().catch(e => console.warn("Auto-play blocked or failed:", e));
+  }, 5000);
+}
+
 const transitionMs = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--transition-time")) || 720;
 const initialHash = window.location.hash;
 const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");

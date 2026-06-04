@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="762b1e78-a6c7-4ee8-a20c-68bea9f7c595" />
+  </component>
+  <component name="KubernetesApiProvider">{}</component>
+</project>

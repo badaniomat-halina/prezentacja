@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Page Product Presentation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="presentation" id="presentation" aria-live="polite">
+      <section class="panel panel-a" id="section-a" data-label="A">
+        <div class="section-content intro-content">
+          <div class="hero-video-frame" aria-label="Animacja logo HALina">
+            <video class="hero-video" autoplay loop muted playsinline>
+              <source src="assets/HALina_loop_logo.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="agenda-panel">
+            <h1 class="agenda-title">Agenda</h1>
+            <nav class="section-menu" aria-label="Agenda prezentacji">
+              <button class="is-hidden" type="button" data-target="0">A</button>
+              <button type="button" data-target="1">Kim jesteśmy</button>
+              <button type="button" data-target="2">Świat przed e-przychodniami</button>
+              <button type="button" data-target="3">Świat z e-przychodniami</button>
+              <button type="button" data-target="4">Jak to działa</button>
+              <button type="button" data-target="5">Dlaczego właśnie my</button>
+              <button type="button" data-target="6">Na jakim jesteśmy etapie</button>
+              <button type="button" data-target="7">Co dalej</button>
+              <button type="button" data-target="8">Czego się nauczyliśmy</button>
+              <button type="button" data-target="9">Krótkie zakończenie</button>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-b" id="section-b" data-label="B">
+        <div class="section-content team-content">
+          <header class="team-header">
+            <h2>Kim jesteśmy?</h2>
+          </header>
+
+          <div class="team-grid" aria-label="Członkowie zespołu HALina">
+            <article class="team-card team-card-featured">
+              <div class="team-portrait">
+                <img src="assets/staff_a.png" alt="Michał" />
+              </div>
+              <div class="team-card-body">
+                <p class="team-name">Michał</p>
+                <h3>Kierownik projektu</h3>
+                <div class="team-tags" aria-label="Obszary odpowiedzialności">
+                  <span>koordynacja zespołu</span>
+                  <span>harmonogram prac</span>
+                  <span>kontrola zakresu</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="team-card team-card-featured">
+              <div class="team-portrait">
+                <img src="assets/staff_b.png" alt="Daria" />
+              </div>
+              <div class="team-card-body">
+                <p class="team-name">Daria</p>
+                <h3>Analityk biznesowo-medyczny</h3>
+                <div class="team-tags" aria-label="Obszary odpowiedzialności">
+                  <span>procesy medyczne</span>
+                  <span>scenariusze pacjenta</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="team-card team-card-featured">
+              <div class="team-portrait">
+                <img src="assets/staff_c.png" alt="Paweł" />
+              </div>
+              <div class="team-card-body">
+                <p class="team-name">Paweł</p>
+                <h3>Architekt systemu IT</h3>
+                <div class="team-tags" aria-label="Obszary odpowiedzialności">
+                  <span>architektura systemu</span>
+                  <span>integracje API</span>
+                  <span>przepływ danych</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="team-card team-card-support team-card-wide">
+              <div class="team-portrait">
+                <img src="assets/staff_d.png" alt="Projektant kapsuły i ergonomii" />
+              </div>
+              <div class="team-card-body">
+                <h3>Projektant kapsuły i ergonomii</h3>
+                <div class="team-tags">
+                  <span>ergonomia kabiny</span>
+                  <span>bezpieczeństwo użytkowania</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="team-card team-card-support">
+              <div class="team-portrait">
+                <img src="assets/staff_e.png" alt="Database Engineer" />
+              </div>
+              <div class="team-card-body">
+                <h3>Database Engineer</h3>
+                <div class="team-tags">
+                  <span>model danych</span>
+                  <span>wydajność zapytań</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="team-card team-card-support">
+              <div class="team-portrait">
+                <img src="assets/staff_f.png" alt="Security Engineer" />
+              </div>
+              <div class="team-card-body">
+                <h3>Security Engineer</h3>
+                <div class="team-tags">
+                  <span>bezpieczeństwo systemu</span>
+                  <span>kontrola dostępu</span>
+                  <span>podatności</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="team-card team-card-support">
+              <div class="team-portrait">
+                <img src="assets/staff_g.png" alt="Lekarz ekspert dziedzinowy" />
+              </div>
+              <div class="team-card-body">
+                <h3>Lekarz ekspert dziedzinowy</h3>
+                <div class="team-tags">
+                  <span>walidacja medyczna</span>
+                  <span>ścieżki diagnostyczne</span>
+                  <span>bezpieczeństwo pacjenta</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="team-card team-card-support">
+              <div class="team-portrait">
+                <img src="assets/staff_h.png" alt="Prawnik" />
+              </div>
+              <div class="team-card-body">
+                <h3>Prawnik</h3>
+                <div class="team-tags">
+                  <span>Compliance RODO</span>
+                  <span>ryzyka prawne</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="team-card team-card-support team-card-wide">
+              <div class="team-portrait">
+                <img src="assets/staff_i.png" alt="Helpdesk i monitoring 24/7" />
+              </div>
+              <div class="team-card-body">
+                <h3>Helpdesk i monitoring 24/7</h3>
+                <div class="team-tags">
+                  <span>wsparcie użytkowników</span>
+                  <span>monitoring systemu</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="team-card team-card-support">
+              <div class="team-portrait">
+                <img src="assets/staff_j.png" alt="Logistyka i montaż terenowy" />
+              </div>
+              <div class="team-card-body">
+                <h3>Logistyka i montaż terenowy</h3>
+                <div class="team-tags">
+                  <span>transport kapsuł</span>
+                  <span>instalacje lokalne</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="team-card team-card-support">
+              <div class="team-portrait">
+                <img src="assets/staff_k.png" alt="Technik aparatury i kapsuły" />
+              </div>
+              <div class="team-card-body">
+                <h3>Technik aparatury i kapsuły</h3>
+                <div class="team-tags">
+                  <span>konfiguracja urządzeń</span>
+                  <span>testy aparatury</span>
+                  <span>serwis kapsuły</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-c" id="section-c" data-label="C">
+        <div class="section-content world-content">
+          <header class="world-header">
+            <h2>Świat przed e-przychodniami</h2>
+          </header>
+
+          <div class="world-carousel" aria-label="Problemy tradycyjnych przychodni">
+            <div class="world-carousel-stage" aria-live="polite"></div>
+          </div>
+
+          <div class="world-carousel-dots" aria-label="Nawigacja carousel">
+            <button type="button" class="is-active" data-carousel-target="0" aria-label="Slajd 1"></button>
+            <button type="button" data-carousel-target="1" aria-label="Slajd 2"></button>
+            <button type="button" data-carousel-target="2" aria-label="Slajd 3"></button>
+            <button type="button" data-carousel-target="3" aria-label="Slajd 4"></button>
+            <button type="button" data-carousel-target="4" aria-label="Slajd 5"></button>
+            <button type="button" data-carousel-target="5" aria-label="Slajd 6"></button>
+            <button type="button" data-carousel-target="6" aria-label="Slajd 7"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-d" id="section-d" data-label="D">
+        <div class="section-content sticky-content">
+          <header class="sticky-header">
+            <h2>Świat z e-przychodniami</h2>
+          </header>
+
+          <div class="sticky-board" aria-label="Porządkowanie problemów i rozwiązań">
+          <article class="sticky-note note-pink" data-pair="1" data-note="a" style="--start-x: calc(100% - var(--note-size) - 9%); --start-y: 6%; --end-x: 1%; --end-y: 2%; --start-rotate: -14deg; --end-rotate: -5deg; --start-z: 13;">
+            <span style="--x: 9%; --y: 8%; --r: -4deg; --s: 1;">długie kolejki do lekarza</span>
+            <span style="--x: 10%; --y: 28%; --r: 3deg; --s: .93;">nieefektywny system zapisów</span>
+            <span style="--x: 8%; --y: 48%; --r: -2deg; --s: .86;">stan pacjenta pogarsza się z każdym tygodniem</span>
+          </article>
+
+          <article class="sticky-note note-blue" data-pair="1" data-note="b" style="--start-x: calc(100% - var(--note-size) - 16%); --start-y: 10%; --end-x: 4%; --end-y: 23%; --start-rotate: 9deg; --end-rotate: 3deg; --start-z: 14;">
+            <span style="--x: 7%; --y: 7%; --r: 3deg; --s: .8;">jeden lekarz AI obsługuje tysiące pacjentów jednocześnie</span>
+            <span style="--x: 8%; --y: 25%; --r: -3deg; --s: .78;">liczba e-przychodni dostosowana do natężenia pacjentów</span>
+            <span style="--x: 9%; --y: 43%; --r: 2deg; --s: .85;">wizyta tego samego dnia o dowolnej porze</span>
+            <span style="--x: 10%; --y: 59%; --r: -2deg; --s: .83;">pacjent nie czeka z objawami</span>
+            <span style="--x: 8%; --y: 73%; --r: 2deg; --s: .76;">działanie prewencyjne nim stan pacjenta ulegnie pogorszeniu</span>
+          </article>
+
+          <article class="sticky-note note-green" data-pair="2" data-note="a" style="--start-x: calc(100% - var(--note-size) - 11%); --start-y: 14%; --end-x: 29%; --end-y: 3%; --start-rotate: -6deg; --end-rotate: 2deg; --start-z: 9;">
+            <span style="--x: 11%; --y: 10%; --r: -3deg; --s: 1.04;">zbyt krótka wizyta</span>
+            <span style="--x: 9%; --y: 34%; --r: 4deg; --s: .94;">lekarz traci czas na papierologię</span>
+          </article>
+
+          <article class="sticky-note note-orange" data-pair="2" data-note="b" style="--start-x: calc(100% - var(--note-size) - 20%); --start-y: 20%; --end-x: 29%; --end-y: 19%; --start-rotate: 16deg; --end-rotate: -3deg; --start-z: 10;">
+            <span style="--x: 8%; --y: 9%; --r: -2deg; --s: .82;">lekarz AI skupia się na wywiadzie i badaniach</span>
+            <span style="--x: 7%; --y: 29%; --r: 2deg; --s: .78;">dokumentacja generuje się automatycznie w czasie wywiadu</span>
+            <span style="--x: 7%; --y: 48%; --r: -2deg; --s: .7;">wizyta trwa tyle ile trzeba - do postawienia ostatecznej diagnozy lub zlecenia odpowiednich badań</span>
+            <span style="--x: 11%; --y: 78%; --r: 3deg; --s: .88;">wywiad bez pośpiechu</span>
+          </article>
+
+          <article class="sticky-note note-blue" data-pair="3" data-note="a" style="--start-x: calc(100% - var(--note-size) - 8%); --start-y: 26%; --end-x: 53%; --end-y: 3%; --start-rotate: 4deg; --end-rotate: -2deg; --start-z: 5;">
+            <span style="--x: 7%; --y: 9%; --r: 2deg; --s: .73;">niedobór lekarzy oznacza nadgodziny, zmęczenie i przeciążenie personelu medycznego</span>
+            <span style="--x: 8%; --y: 42%; --r: -3deg; --s: .83;">rutynowe przypadki zajmują większość czasu lekarza</span>
+          </article>
+
+          <article class="sticky-note note-pink" data-pair="3" data-note="b" style="--start-x: calc(100% - var(--note-size) - 15%); --start-y: 32%; --end-x: 54%; --end-y: 22%; --start-rotate: -17deg; --end-rotate: 4deg; --start-z: 6;">
+            <span style="--x: 8%; --y: 8%; --r: -3deg; --s: .78;">HALina przejmuje powtarzalne, czasochłonne i rutynowe etapy wizyty</span>
+            <span style="--x: 7%; --y: 35%; --r: 2deg; --s: .72;">zbieranie wywiadu, analiza danych, porządkowanie dokumentacji, kwalifikacja przypadków</span>
+            <span style="--x: 8%; --y: 67%; --r: -1deg; --s: .82;">lekarz może skupić się na naprawdę trudnych przypadkach</span>
+          </article>
+
+          <article class="sticky-note note-orange" data-pair="4" data-note="a" style="--start-x: calc(100% - var(--note-size) - 12%); --start-y: 38%; --end-x: 3%; --end-y: 56%; --start-rotate: 12deg; --end-rotate: 3deg; --start-z: 11;">
+            <span style="--x: 9%; --y: 10%; --r: 2deg; --s: .8;">wielość systemów medycznych, rozproszona dokumentacja</span>
+            <span style="--x: 8%; --y: 28%; --r: -4deg; --s: .92;">lekarz składa obraz pacjenta z fragmentów</span>
+          </article>
+
+          <article class="sticky-note note-green" data-pair="4" data-note="b" style="--start-x: calc(100% - var(--note-size) - 21%); --start-y: 44%; --end-x: 4%; --end-y: 69%; --start-rotate: -10deg; --end-rotate: -4deg; --start-z: 12;">
+            <span style="--x: 7%; --y: 11%; --r: -2deg; --s: .78;">lekarz AI zapoznaje się z historią pacjenta w 0.34 sekundy</span>
+            <span style="--x: 9%; --y: 41%; --r: 3deg; --s: .86;">jedna centralna ewidencja - jeden system</span>
+            <span style="--x: 7%; --y: 66%; --r: -2deg; --s: .78;">podgląd badań, e-recept, historii leczenia w aplikacji</span>
+          </article>
+
+          <article class="sticky-note note-green" data-pair="5" data-note="a" style="--start-x: calc(100% - var(--note-size) - 10%); --start-y: 50%; --end-x: 78%; --end-y: 3%; --start-rotate: 18deg; --end-rotate: 2deg; --start-z: 3;">
+            <span style="--x: 8%; --y: 13%; --r: -3deg; --s: .94;">kontakt z chorymi to ryzyko nowych chorób</span>
+          </article>
+
+          <article class="sticky-note note-blue" data-pair="5" data-note="b" style="--start-x: calc(100% - var(--note-size) - 18%); --start-y: 56%; --end-x: 77%; --end-y: 14%; --start-rotate: -3deg; --end-rotate: -3deg; --start-z: 4;">
+            <span style="--x: 9%; --y: 10%; --r: 3deg; --s: .88;">pacjent przychodzi na ustaloną godzinę</span>
+            <span style="--x: 7%; --y: 38%; --r: -2deg; --s: .75;">system AI szacuje przewidywany czas wizyt - inteligentny harmonogram</span>
+            <span style="--x: 9%; --y: 68%; --r: 2deg; --s: .82;">bufor czasowy pomiędzy pacjentami - pusta poczekalnia</span>
+          </article>
+
+          <article class="sticky-note note-pink" data-pair="6" data-note="a" style="--start-x: calc(100% - var(--note-size) - 13%); --start-y: 60%; --end-x: 79%; --end-y: 47%; --start-rotate: 7deg; --end-rotate: -2deg; --start-z: 1;">
+            <span style="--x: 9%; --y: 10%; --r: -3deg; --s: .94;">trudny dostęp do najlepszych specjalistów</span>
+            <span style="--x: 8%; --y: 36%; --r: 3deg; --s: .88;">dobry specjalista tylko w dużych miastach</span>
+          </article>
+
+          <article class="sticky-note note-orange" data-pair="6" data-note="b" style="--start-x: calc(100% - var(--note-size) - 22%); --start-y: calc(100% - var(--note-size) - 16%); --end-x: 78%; --end-y: 64%; --start-rotate: -14deg; --end-rotate: 4deg; --start-z: 2;">
+            <span style="--x: 7%; --y: 6%; --r: 2deg; --s: .75;">HALina zatrudnia jednego, najlepszego specjalistę</span>
+            <span style="--x: 8%; --y: 22%; --r: -2deg; --s: .75;">jeden model lekarza AI - taki sam dla każdego pacjenta</span>
+            <span style="--x: 7%; --y: 38%; --r: 2deg; --s: .73;">identyczna jakość usług - zawsze na najwyższym poziomie</span>
+            <span style="--x: 9%; --y: 55%; --r: -3deg; --s: .77;">model aktualizowany na bieżąco</span>
+            <span style="--x: 8%; --y: 68%; --r: 2deg; --s: .67;">model doskonali wiedzę i doświadczenie na tysiącach pacjentów</span>
+            <span style="--x: 7%; --y: 82%; --r: -1deg; --s: .66;">lekarz AI porównuje twoje objawy z tysiącami podobnych przypadków</span>
+          </article>
+
+          <article class="sticky-note note-orange" data-pair="7" data-note="a" style="--start-x: calc(100% - var(--note-size) - 9%); --start-y: calc(100% - var(--note-size) - 11%); --end-x: 30%; --end-y: 57%; --start-rotate: -8deg; --end-rotate: -3deg; --start-z: 7;">
+            <span style="--x: 9%; --y: 8%; --r: -3deg; --s: .9;">utrudniona komunikacja z lekarzem</span>
+            <span style="--x: 8%; --y: 26%; --r: 3deg; --s: .88;">utrudniona komunikacja z pacjentem</span>
+            <span style="--x: 9%; --y: 44%; --r: -2deg; --s: .85;">lekarz też może mieć gorszy dzień</span>
+            <span style="--x: 8%; --y: 60%; --r: 2deg; --s: .8;">wspaniały specjalista, ale trudny człowiek</span>
+          </article>
+
+          <article class="sticky-note note-green" data-pair="7" data-note="b" style="--start-x: calc(100% - var(--note-size) - 18%); --start-y: calc(100% - var(--note-size) - 6%); --end-x: calc(32% + var(--note-size) * 0.88); --end-y: 62%; --start-rotate: 15deg; --end-rotate: 3deg; --start-z: 8;">
+            <span style="--x: 8%; --y: 10%; --r: 2deg; --s: .84;">lekarz AI zawsze empatyczny i cierpliwy</span>
+            <span style="--x: 7%; --y: 34%; --r: -2deg; --s: .76;">lekarz AI prowadzi pacjenta przez całą wizytę</span>
+            <span style="--x: 8%; --y: 62%; --r: 2deg; --s: .73;"><s>głodny</s> <s>niewyspany</s> lekarz AI potrzebuje tylko nieco mocy obliczeniowych</span>
+          </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-e" id="section-e" data-label="E">
+        <div class="section-content how-content">
+          <header class="how-header">
+            <h2>Jak to działa</h2>
+          </header>
+
+          <div class="how-stage" aria-label="Animacja działania e-przychodni">
+            <div class="how-device-scene">
+              <div class="how-side how-side-left" aria-live="polite">
+                <div class="how-sequence is-active" data-sequence="0">
+                  <h2>biometria</h2>
+                  <p>identyfikacja pacjenta na podstawie danych biometrycznych</p>
+                  <h2>kamery i urządzenia audio</h2>
+                  <p>komunikacja lekarza AI z pacjentem</p>
+                  <p>analiza zachowań i emocji pacjenta</p>
+                </div>
+
+                <div class="how-sequence" data-sequence="1">
+                  <h2>diagnostyka podstawowa</h2>
+                  <p>waga z analizatorem składu ciała i wzrostomierzem</p>
+                  <p>ciśnieniomierz, czujnik tętna, pulsoksymetr, termometr</p>
+                  <h2>diagnostyka obrazowo-akustyczna</h2>
+                  <p>aparat USG, aparat okulistyczny, kamera dermatologiczna</p>
+                  <p>badanie dna oka, badanie refrakcji</p>
+                  <p>analiza wizualna objawów, analiza skóry, analiza oddechu i kaszlu</p>
+                </div>
+
+                <div class="how-sequence" data-sequence="2">
+                  <h2>diagnostyka laboratoryjna</h2>
+                  <p>analizator krwi, glukometr, analizator biomarkerów</p>
+                  <p>automatyczny system poboru krwi</p>
+                  <p>badanie podstawowych parametrów krwi</p>
+                  <p>pomiar glukozy, CRP, infekcje</p>
+                  <h2>diagnostyka układu sercowo-naczyniowego</h2>
+                  <p>stetoskop, spirometr, EKG</p>
+                  <p>analiza pracy serca oraz badanie wydolności oddechowej</p>
+                </div>
+
+                <div class="how-sequence" data-sequence="3">
+                  <h2>testomat</h2>
+                  <p>aparatura do szybkich testów diagnostycznych</p>
+                  <p>analiza wybranych wydzielin organizmu</p>
+                  <p>wykrywanie zaburzeń metabolicznych</p>
+                  <p>wykrywanie infekcji (testy wirusowe)</p>
+                  <h2>próbkomat</h2>
+                  <p>automat do dystrybucji próbek z materiałem</p>
+                  <p>przyjmowanie próbek (krew, mocz, ślina)</p>
+                  <p>przechowywanie w odpowiednich warunkach</p>
+                  <p>przygotowanie do transportu do badań laboratoryjnych</p>
+                </div>
+
+                <div class="how-sequence" data-sequence="4">
+                  <h2>lekomat</h2>
+                  <p>automat do dystrybucji leków</p>
+                  <p>wydawanie leków na podstawie e-recepty</p>
+                  <p>realizacja e-recept na miejscu</p>
+                </div>
+              </div>
+
+              <div class="how-device-wrap">
+                <img class="how-device-image" src="assets/device_a.png" alt="Kapsuła e-przychodni HALina" />
+              </div>
+
+              <div class="how-side how-side-right" aria-live="polite">
+                <div class="how-sequence is-active" data-sequence="0">
+                  <h2>Lekarz AI Heal9000</h2>
+                  <p>cierpliwy i empatyczny agent AI</p>
+                </div>
+
+                <div class="how-sequence" data-sequence="1">
+                  <h2>wywiad z pacjentem</h2>
+                  <p>gromadzenie informacji i profilowanie pacjenta - model AI uczy się pacjenta</p>
+                  <p>personalizacja leczenia na podstawie historii pacjenta</p>
+                </div>
+
+                <div class="how-sequence" data-sequence="2">
+                  <h2>pełna autonomia</h2>
+                  <p>autonomiczny dobór badań i testów</p>
+                  <p>autonomiczna interpretacja wyników badań</p>
+                  <p>autonomiczne generowanie dokumentacji medycznej</p>
+                </div>
+
+                <div class="how-sequence" data-sequence="3">
+                  <h2>decyzje medyczne</h2>
+                  <p>postawienie diagnozy - w oparciu o bazę tysięcy podobnych przypadków medycznych</p>
+                  <p>decydowanie o dalszym leczeniu - skierowanie na dalsze badania lub skierowanie do lekarza specjalisty</p>
+                  <p>przepisanie leków i przedłużenie e-recepty</p>
+                </div>
+
+                <div class="how-sequence" data-sequence="4">
+                  <h2>sterowanie aparaturą medyczną</h2>
+                  <p>instruowanie pacjenta jak przeprowadzić samobadanie</p>
+                  <p>intuicyjna obsługa urządzeń</p>
+                  <p>weryfikacja poprawności wykonanego badania</p>
+                  <p>pobieranie danych z urządzeń - analiza objawów</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="how-app-scene" aria-hidden="true">
+              <div class="how-mockup-wrap">
+                <img class="how-mockup-image" src="assets/mockup_a.png" alt="Aplikacja pacjenta HALina" />
+              </div>
+
+              <ul class="how-feature-list">
+                <li>rezerwacja wizyt</li>
+                <li>przypomnienie o wizycie i badaniach</li>
+                <li>przypomnienie o lekach</li>
+                <li>podgląd historii leczenia</li>
+                <li>monitoring postępów leczenia</li>
+                <li>podgląd wyników badań laboratoryjnych</li>
+                <li>odbiór e-recepty</li>
+                <li>dostęp do zaleceń medycznych i dietetycznych</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-f" id="section-f" data-label="F">
+        <div class="section-content why-content">
+          <header class="why-header">
+            <h2>Dlaczego właśnie my?</h2>
+            <p>Tworzymy nową kategorię usług medycznych</p>
+          </header>
+
+          <div class="why-grid" aria-label="Przewagi produktu HALina">
+            <article class="why-card">
+              <div class="why-card-head">
+                <span class="why-number">01</span>
+                <h3>Luka rynkowa</h3>
+              </div>
+              <p>HALina to produkt unikatowy. Na rynku brakuje kompleksowego rozwiązania, które łączy stanowisko diagnostyczne, lekarza AI, automatyczną dokumentację i aplikację pacjenta w jeden spójny system.</p>
+            </article>
+
+            <article class="why-card">
+              <div class="why-card-head">
+                <span class="why-number">02</span>
+                <h3>Gotowy prototyp</h3>
+              </div>
+              <p>HALina nie jest tylko koncepcją. To działający model produktu, który można pokazać, testować i rozwijać w kierunku wdrożeń pilotażowych.</p>
+            </article>
+
+            <article class="why-card">
+              <div class="why-card-head">
+                <span class="why-number">03</span>
+                <h3>Certyfikacja i zaufanie</h3>
+              </div>
+              <p>E-przychodnia to zarejestrowany, spełniający wszelkie normy, certyfikowany wyrób medyczny. Projekt spełnia wymagania bezpieczeństwa, ochrony danych i standardów medycznych, które są kluczowe dla wejścia na rynek ochrony zdrowia.</p>
+            </article>
+
+            <article class="why-card">
+              <div class="why-card-head">
+                <span class="why-number">04</span>
+                <h3>Skalowalny model</h3>
+              </div>
+              <p>Tworzysz całą sieć punktów, zależnie od zapotrzebowania na usługi medyczne w danej lokalizacji. Nie ogranicza cię już niedobór personelu medycznego.</p>
+            </article>
+
+            <article class="why-card">
+              <div class="why-card-head">
+                <span class="why-number">05</span>
+                <h3>Szansa na rynek</h3>
+              </div>
+              <p>Wczesne wejście w nową kategorię usług daje możliwość zbudowania rozpoznawalnej marki, standardu działania i silnej pozycji rynkowej przed konkurencją.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-g" id="section-g" data-label="G">
+        <div class="section-content timeline-content">
+          <header class="timeline-header">
+            <h2>Na jakim jesteśmy etapie</h2>
+            <div class="timeline-legend" aria-label="Legenda wykresów">
+              <span class="timeline-legend-item">
+                <span class="timeline-legend-swatch timeline-legend-cost" aria-hidden="true"></span>
+                <span>Koszty planowane</span>
+              </span>
+              <span class="timeline-legend-item">
+                <span class="timeline-legend-swatch timeline-legend-reserve" aria-hidden="true"></span>
+                <span>Rezerwy</span>
+              </span>
+              <span class="timeline-legend-item">
+                <span class="timeline-legend-swatch timeline-legend-realized" aria-hidden="true"></span>
+                <span>Koszty zrealizowane</span>
+              </span>
+            </div>
+          </header>
+          <div class="timeline-track" aria-label="Etapy projektu HALina">
+            <div class="timeline-line" aria-hidden="true"></div>
+            <article class="timeline-item">
+              <span class="timeline-point" aria-hidden="true"></span>
+              <h3>1. Planowanie</h3>
+              <div class="timeline-metrics" aria-hidden="true"></div>
+              <ul>
+                <li id="1.1-descr">1.1 Analiza</li>
+                <li id="1.2-descr">1.2 Wymagania systemowe</li>
+                <li id="1.3-descr">1.3 Definicja zakresu projektu</li>
+              </ul>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-point" aria-hidden="true"></span>
+              <h3>2. Projektowanie</h3>
+              <div class="timeline-metrics" aria-hidden="true"></div>
+              <ul>
+                <li id="2.1-descr">2.1 Architektura systemu IT</li>
+                <li id="2.2-descr">2.2 Projekt UI/UX systemu</li>
+                <li id="2.3-descr">2.3 Projekt modułu AI</li>
+                <li id="2.4-descr">2.4 Projekt punktu diagnostycznego</li>
+              </ul>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-point" aria-hidden="true"></span>
+              <h3>3. Implementacja</h3>
+              <div class="timeline-metrics" aria-hidden="true"></div>
+              <ul>
+                <li id="3.1-descr">3.1 Implementacja systemu IT</li>
+                <li id="3.2-descr">3.2 Implementacja modułu AI</li>
+                <li id="3.3-descr">3.3 Implementacja aplikacji mobilnej</li>
+                <li id="3.4-descr">3.4 Implementacja systemu fizycznego</li>
+              </ul>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-point" aria-hidden="true"></span>
+              <h3>4. Integracja</h3>
+              <div class="timeline-metrics" aria-hidden="true"></div>
+              <ul>
+                <li id="4.1-descr">4.1 Integracja systemu IT</li>
+                <li id="4.2-descr">4.2 Integracja modułu AI</li>
+                <li id="4.3-descr">4.3 Integracja aparatury medycznej</li>
+                <li id="4.4-descr">4.4 Integracja aplikacji mobilnej</li>
+              </ul>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-point" aria-hidden="true"></span>
+              <h3>5. Testy</h3>
+              <div class="timeline-metrics" aria-hidden="true"></div>
+              <ul>
+                <li id="5.1-descr">5.1 Testy systemu IT</li>
+                <li id="5.2-descr">5.2 Testy modułu AI</li>
+                <li id="5.3-descr">5.3 Testy aplikacji mobilnej</li>
+                <li id="5.4-descr">5.4 Testy systemu fizycznego</li>
+                <li id="5.5-descr">5.5 Testy integracyjne</li>
+                <li id="5.6-descr" class="is-in-progress">5.6 Testy akceptacyjne</li>
+                <li id="5.7-descr" class="is-in-progress">5.7 Testy medyczne</li>
+              </ul>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-point" aria-hidden="true"></span>
+              <h3>6. Wdrożenie</h3>
+              <div class="timeline-metrics" aria-hidden="true"></div>
+              <ul>
+                <li id="6.1-descr" class="is-in-progress">6.1 Przygotowanie środowiska wdrożeniowego</li>
+                <li id="6.2-descr" class="is-in-progress">6.2 Instalacja systemu w punkcie diagnostycznym</li>
+                <li id="6.3-descr" class="is-in-progress">6.3 Konfiguracja systemu produkcyjnego</li>
+                <li id="6.4-descr" class="is-in-progress">6.4 Szkolenie użytkowników i personelu</li>
+                <li id="6.5-descr" class="is-in-progress">6.5 Uruchomienie produkcyjne systemu</li>
+                <li id="6.6-descr" class="is-in-progress">6.6 Dokumentacja powdrożeniowa</li>
+                <li id="6.7-descr" class="is-in-progress">6.7 Promocja</li>
+              </ul>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-point" aria-hidden="true"></span>
+              <h3>7. Zarządzanie</h3>
+              <div class="timeline-metrics" aria-hidden="true"></div>
+              <ul>
+                <li id="7.1-descr">7.1 Planowanie i kontrola projektu</li>
+                <li id="7.2-descr" class="is-in-progress">7.2 Monitorowanie i raportowanie postępu</li>
+                <li id="7.3-descr" class="is-in-progress">7.3 Zarządzanie ryzykiem projektu</li>
+                <li id="7.4-descr" class="is-in-progress">7.4 Zarządzanie jakością projektu</li>
+                <li id="7.5-descr" class="is-in-progress">7.5 Zamknięcie projektu</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-h" id="section-h" data-label="H">
+        <div class="section-content next-content">
+          <header class="next-header">
+            <h2>Co dalej</h2>
+          </header>
+          <div class="next-stage">
+            <ul class="next-list" aria-label="Kolejne kroki projektu HALina">
+              <li data-step="0">pierwszy punkt w wybranej lokalizacji</li>
+              <li data-step="1">test w realnym środowisku</li>
+              <li data-step="2">zbieranie danych z pracy systemu</li>
+              <li data-step="3">szkolenia</li>
+              <li data-step="4">monitoring</li>
+              <li data-step="5">uzupełnianie materiałów</li>
+              <li data-step="6">dezynfekcja</li>
+              <li data-step="7">odbiór próbek</li>
+              <li data-step="8">reakcja na awarie</li>
+              <li data-step="9">wsparcie pacjenta</li>
+              <li data-step="10">nadzór lekarza dyżurującego</li>
+              <li data-step="11">rozwój oprogramowania</li>
+              <li data-step="12">AI learning loop</li>
+            </ul>
+            <div class="next-visual" aria-live="polite">
+              <img class="next-image next-image-base" src="assets/next_step_a.png" alt="pierwszy punkt w wybranej lokalizacji" />
+              <img class="next-image next-image-overlay" src="assets/next_step_a.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-i" id="section-i" data-label="I">
+        <canvas class="risk-radar-canvas" aria-hidden="true"></canvas>
+        <div class="risk-radar-sweep" aria-hidden="true"></div>
+        <div class="section-content risk-content">
+          <header class="risk-header">
+            <h2>Radar ryzyk</h2>
+          </header>
+          <div class="risk-points" aria-label="Mapa ryzyk">
+            <button class="risk-point" type="button" data-risk="failures" style="--x: 18%; --y: 30%; --delay: 0s;">
+              <span class="risk-point-dot" aria-hidden="true"></span>
+              <span class="risk-point-label">Awarie</span>
+            </button>
+            <button class="risk-point" type="button" data-risk="diagnosis" style="--x: 39%; --y: 18%; --delay: 0.16s;">
+              <span class="risk-point-dot" aria-hidden="true"></span>
+              <span class="risk-point-label">Błędna diagnoza</span>
+            </button>
+            <button class="risk-point" type="button" data-risk="data" style="--x: 63%; --y: 29%; --delay: 0.32s;">
+              <span class="risk-point-dot" aria-hidden="true"></span>
+              <span class="risk-point-label">Wyciek danych</span>
+            </button>
+            <button class="risk-point" type="button" data-risk="adoption" style="--x: 82%; --y: 20%; --delay: 0.48s;">
+              <span class="risk-point-dot" aria-hidden="true"></span>
+              <span class="risk-point-label">Lęk społeczny</span>
+            </button>
+            <button class="risk-point" type="button" data-risk="law" style="--x: 22%; --y: 72%; --delay: 0.64s;">
+              <span class="risk-point-dot" aria-hidden="true"></span>
+              <span class="risk-point-label">Prawo</span>
+            </button>
+            <button class="risk-point" type="button" data-risk="liability" style="--x: 52%; --y: 66%; --delay: 0.8s;">
+              <span class="risk-point-dot" aria-hidden="true"></span>
+              <span class="risk-point-label">Odszkodowania</span>
+            </button>
+            <button class="risk-point" type="button" data-risk="vandalism" style="--x: 77%; --y: 74%; --delay: 1s;">
+              <span class="risk-point-dot" aria-hidden="true"></span>
+              <span class="risk-point-label">Wandalizm</span>
+            </button>
+          </div>
+        </div>
+        <div class="risk-dialog-overlay" role="dialog" aria-modal="true" aria-labelledby="risk-dialog-title" hidden>
+          <div class="risk-dialog-box">
+            <div class="risk-dialog-image-wrap">
+              <img class="risk-dialog-image" src="" alt="" />
+            </div>
+            <div class="risk-dialog-copy">
+              <h3 id="risk-dialog-title"></h3>
+              <p class="risk-dialog-description"></p>
+              <h4>Nasze działania</h4>
+              <p class="risk-dialog-action"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-j" id="section-j" data-label="J">
+        <div class="section-content closing-content">
+          <img class="closing-logo" src="assets/brand_logo.jpg" alt="Logo HALina" />
+          <div class="closing-main">
+            <h2>Dziękujemy</h2>
+          </div>
+          <p>Pozostajemy do Państwa dyspozycji.</p>
+          <img class="closing-store" src="assets/play_appstore.jpg" alt="Pobierz aplikację" />
+        </div>
+      </section>
+    </main>
+
+    <nav class="quick-nav" aria-label="Szybka nawigacja">
+      <button class="nav-button" type="button" data-action="top" aria-label="Wroc do sekcji A" title="Do sekcji A">
+        <span class="icon icon-double-up" aria-hidden="true"></span>
+      </button>
+      <button class="nav-button" type="button" data-action="up" aria-label="Przejdz sekcje wyzej" title="Sekcja wyzej">
+        <span class="icon icon-up" aria-hidden="true"></span>
+      </button>
+      <button class="nav-button" type="button" data-action="down" aria-label="Przejdz sekcje nizej" title="Sekcja nizej">
+        <span class="icon icon-down" aria-hidden="true"></span>
+      </button>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>

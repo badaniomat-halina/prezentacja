@@ -762,6 +762,7 @@ button {
 .world-slide-visual.is-empty::after {
   width: min(560px, 80%);
   aspect-ratio: 16 / 9;
+  position: relative;
   border: 1px solid rgba(76, 127, 146, 0.22);
   border-radius: 8px;
   content: "";
@@ -2056,6 +2057,7 @@ button {
 .safety-video-wrap, .maintenance-video-wrap, .production-video-wrap, .research-video-wrap, .marketing-video-wrap {
   width: 100%;
   aspect-ratio: 16 / 9;
+  position: relative;
   border-radius: 0;
   overflow: hidden;
   background: #000;
@@ -2921,4 +2923,49 @@ h2 {
   .world-slide {
     transition: none;
   }
+}
+
+.video-controls {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.safety-video-wrap:hover .video-controls,
+.maintenance-video-wrap:hover .video-controls,
+.production-video-wrap:hover .video-controls,
+.research-video-wrap:hover .video-controls,
+.marketing-video-wrap:hover .video-controls {
+  opacity: 1;
+}
+
+.video-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #17333d;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: background 200ms ease, transform 200ms ease;
+}
+
+.video-btn:hover {
+  background: #ffffff;
+  transform: scale(1.1);
+  color: #14b8b2;
+}
+
+.video-btn svg {
+  display: block;
 }

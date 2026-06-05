@@ -22,7 +22,7 @@
       <section class="panel panel-a" id="section-a" data-label="A">
         <div class="section-content intro-content">
           <div class="hero-video-frame" aria-label="Animacja logo HALina">
-            <video class="hero-video" autoplay loop muted playsinline>
+            <video class="hero-video" loop muted playsinline>
               <source src="assets/HALina_loop_logo.mp4" type="video/mp4" />
             </video>
           </div>
@@ -450,9 +450,18 @@
           <div class="safety-grid" aria-label="Bezpieczeństwo w e-przychodni">
             <article class="safety-card">
               <div class="safety-video-wrap">
-                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                <video loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
                   <source src="assets/safety/Safety_1_biometric.mp4" type="video/mp4" />
                 </video>
+                <div class="video-controls">
+                  <button type="button" class="video-btn btn-mute" aria-label="Wycisz/Odcisz" title="Wycisz/Odcisz">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-muted"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-unmuted" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                  </button>
+                  <button type="button" class="video-btn btn-reset" aria-label="Od nowa" title="Od nowa">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                  </button>
+                </div>
               </div>
               <div class="safety-card-body">
                 <h3>Dostęp biometryczny</h3>
@@ -462,9 +471,18 @@
 
             <article class="safety-card">
               <div class="safety-video-wrap">
-                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                <video loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
                   <source src="assets/safety/Safety_2_encryption.mp4" type="video/mp4" />
                 </video>
+                <div class="video-controls">
+                  <button type="button" class="video-btn btn-mute" aria-label="Wycisz/Odcisz" title="Wycisz/Odcisz">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-muted"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-unmuted" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                  </button>
+                  <button type="button" class="video-btn btn-reset" aria-label="Od nowa" title="Od nowa">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                  </button>
+                </div>
               </div>
               <div class="safety-card-body">
                 <h3>Bezpieczeństwo danych</h3>
@@ -474,9 +492,18 @@
 
             <article class="safety-card">
               <div class="safety-video-wrap">
-                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                <video loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
                   <source src="assets/safety/Safety_3_privacy.mp4" type="video/mp4" />
                 </video>
+                <div class="video-controls">
+                  <button type="button" class="video-btn btn-mute" aria-label="Wycisz/Odcisz" title="Wycisz/Odcisz">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-muted"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-unmuted" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                  </button>
+                  <button type="button" class="video-btn btn-reset" aria-label="Od nowa" title="Od nowa">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                  </button>
+                </div>
               </div>
               <div class="safety-card-body">
                 <h3>Prywatność</h3>
@@ -496,9 +523,18 @@
           <div class="maintenance-grid" aria-label="Autonomiczne utrzymanie badaniomatu">
             <article class="maintenance-card">
               <div class="maintenance-video-wrap">
-                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                <video loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
                   <source src="assets/self-maintenence/self_cleaning.mp4" type="video/mp4" />
                 </video>
+                <div class="video-controls">
+                  <button type="button" class="video-btn btn-mute" aria-label="Wycisz/Odcisz" title="Wycisz/Odcisz">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-muted"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-unmuted" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                  </button>
+                  <button type="button" class="video-btn btn-reset" aria-label="Od nowa" title="Od nowa">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                  </button>
+                </div>
               </div>
               <div class="maintenance-card-body">
                 <h3>System dezynfekcji</h3>
@@ -508,9 +544,18 @@
 
             <article class="maintenance-card">
               <div class="maintenance-video-wrap">
-                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                <video loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
                   <source src="assets/self-maintenence/self_fix.mp4" type="video/mp4" />
                 </video>
+                <div class="video-controls">
+                  <button type="button" class="video-btn btn-mute" aria-label="Wycisz/Odcisz" title="Wycisz/Odcisz">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-muted"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-unmuted" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                  </button>
+                  <button type="button" class="video-btn btn-reset" aria-label="Od nowa" title="Od nowa">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                  </button>
+                </div>
               </div>
               <div class="maintenance-card-body">
                 <h3>Autodiagnostyka</h3>
@@ -520,9 +565,18 @@
 
             <article class="maintenance-card">
               <div class="maintenance-video-wrap">
-                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                <video loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
                   <source src="assets/self-maintenence/self_clean_surrunding.mp4" type="video/mp4" />
                 </video>
+                <div class="video-controls">
+                  <button type="button" class="video-btn btn-mute" aria-label="Wycisz/Odcisz" title="Wycisz/Odcisz">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-muted"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-unmuted" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                  </button>
+                  <button type="button" class="video-btn btn-reset" aria-label="Od nowa" title="Od nowa">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                  </button>
+                </div>
               </div>
               <div class="maintenance-card-body">
                 <h3>Czystość otoczenia</h3>
@@ -542,9 +596,18 @@
           <div class="production-grid" aria-label="Proces produkcji i transportu">
             <article class="production-card full-width">
               <div class="production-video-wrap">
-                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                <video loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
                   <source src="assets/productio-and-deployment/halina-production-and-deployment.mp4" type="video/mp4" />
                 </video>
+                <div class="video-controls">
+                  <button type="button" class="video-btn btn-mute" aria-label="Wycisz/Odcisz" title="Wycisz/Odcisz">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-muted"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-unmuted" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                  </button>
+                  <button type="button" class="video-btn btn-reset" aria-label="Od nowa" title="Od nowa">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                  </button>
+                </div>
               </div>
               <div class="production-card-body">
                 <h3>Skalowalna produkcja i inteligentny transport</h3>
@@ -564,9 +627,18 @@
           <div class="research-grid" aria-label="Prace badawczo-rozwojowe">
             <article class="research-card full-width">
               <div class="research-video-wrap">
-                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                <video loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
                   <source src="assets/research-labs/halina-reasearch-labs.mp4" type="video/mp4" />
                 </video>
+                <div class="video-controls">
+                  <button type="button" class="video-btn btn-mute" aria-label="Wycisz/Odcisz" title="Wycisz/Odcisz">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-muted"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-unmuted" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                  </button>
+                  <button type="button" class="video-btn btn-reset" aria-label="Od nowa" title="Od nowa">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                  </button>
+                </div>
               </div>
               <div class="research-card-body">
                 <h3>Kalibracja i bio-informatyka</h3>
@@ -586,9 +658,18 @@
           <div class="marketing-grid" aria-label="Kampania reklamowa">
             <article class="marketing-card full-width">
               <div class="marketing-video-wrap">
-                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                <video loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
                   <source src="assets/marketing/ATL_addvertisement.mp4" type="video/mp4" />
                 </video>
+                <div class="video-controls">
+                  <button type="button" class="video-btn btn-mute" aria-label="Wycisz/Odcisz" title="Wycisz/Odcisz">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-muted"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon-unmuted" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                  </button>
+                  <button type="button" class="video-btn btn-reset" aria-label="Od nowa" title="Od nowa">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                  </button>
+                </div>
               </div>
               <div class="marketing-card-body">
                 <h3>Kampania "HALina - Twoje zdrowie w Twoich rękach"</h3>
@@ -870,7 +951,7 @@
           <div class="closing-brand-wrap">
             <img class="closing-logo" src="assets/brand_logo.jpg" alt="Logo HALina" />
             <div class="closing-app-preview">
-              <video autoplay loop muted playsinline>
+              <video loop muted playsinline>
                 <source src="assets/outro/mobile-app-visualizaiotn.mp4" type="video/mp4" />
               </video>
             </div>

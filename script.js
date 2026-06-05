@@ -1231,3 +1231,69 @@ initializeCarousel();
 initializeStickyBoard();
 initializeNextSection();
 initializeHowSection();
+
+// Video Controls logic
+const videoWraps = document.querySelectorAll('.safety-video-wrap, .maintenance-video-wrap, .production-video-wrap, .research-video-wrap, .marketing-video-wrap');
+
+videoWraps.forEach(wrap => {
+  const video = wrap.querySelector('video');
+  const btnMute = wrap.querySelector('.btn-mute');
+  const btnReset = wrap.querySelector('.btn-reset');
+
+  if (!video) return;
+
+  if (btnMute) {
+    const iconMuted = btnMute.querySelector('.icon-muted');
+    const iconUnmuted = btnMute.querySelector('.icon-unmuted');
+
+    btnMute.addEventListener('click', (e) => {
+      e.stopPropagation();
+      video.muted = !video.muted;
+      if (video.muted) {
+        iconMuted.style.display = 'block';
+        iconUnmuted.style.display = 'none';
+      } else {
+        iconMuted.style.display = 'none';
+        iconUnmuted.style.display = 'block';
+      }
+    });
+  }
+
+  if (btnReset) {
+    btnReset.addEventListener('click', (e) => {
+      e.stopPropagation();
+      video.currentTime = 0;
+      video.play().catch(err => console.warn('Play interrupted', err));
+    });
+  }
+});
+
+
+// Video Autoplay/Pause by Active Slide
+function updateActiveVideos() {
+  panels.forEach((panel, index) => {
+    const videos = panel.querySelectorAll('video');
+    if (index === currentIndex) {
+      videos.forEach(v => {
+        if (v.id === 'hero-video-intro') {
+          if (v.currentTime > 0) v.play().catch(e => console.warn(e));
+        } else {
+          v.play().catch(e => console.warn(e));
+        }
+      });
+    } else {
+      videos.forEach(v => v.pause());
+    }
+  });
+}
+
+// Hook into moveTo instead of transitionend for faster response
+const originalMoveTo = moveTo;
+moveTo = function(index) {
+  originalMoveTo(index);
+  updateActiveVideos();
+};
+
+window.addEventListener('load', () => {
+  updateActiveVideos();
+});

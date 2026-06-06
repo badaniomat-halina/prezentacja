@@ -1985,13 +1985,23 @@ button {
   line-height: 1;
 }
 
+.gang-content {
+  grid-template-rows: auto minmax(0, 1fr);
+}
+
+.gang-header {
+  padding: clamp(10px, 1.5vh, 20px) 24px clamp(6px, 1vh, 14px);
+}
+
 .gang-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: 25vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: 16px;
   padding: 0 42px 42px;
   width: 100%;
+  height: 100%;
+  min-height: 0;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -2013,14 +2023,24 @@ button {
 .gang-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
-.gang-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
-.gang-item:nth-child(2) { grid-column: span 2; grid-row: span 1; }
-.gang-item:nth-child(3) { grid-column: span 2; grid-row: span 2; }
-.gang-item:nth-child(4) { grid-column: span 2; grid-row: span 1; }
-.gang-item:nth-child(5) { grid-column: 2 / 6; grid-row: span 2; }
+.gang-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 12px;
+  background: linear-gradient(to top, rgba(23, 51, 61, 0.75) 0%, transparent 100%);
+  color: #ffffff;
+  font-family: "Capsuula", Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(1rem, 1.4vw, 1.4rem);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 
 .safety-grid, .maintenance-grid, .production-grid, .research-grid, .marketing-grid {
   display: grid;

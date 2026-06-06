@@ -2033,6 +2033,15 @@ button {
 
 .production-grid, .research-grid, .marketing-grid {
   grid-template-columns: 1fr;
+  height: 100%;
+}
+
+.production-header, .research-header, .marketing-header {
+  padding: clamp(10px, 1.5vh, 20px) 24px clamp(6px, 1vh, 14px);
+}
+
+.production-header h2, .research-header h2, .marketing-header h2 {
+  font-size: clamp(1.3rem, 2.5vw, 2.5rem);
 }
 
 .safety-card, .maintenance-card, .production-card, .research-card, .marketing-card {
@@ -2054,6 +2063,17 @@ button {
   z-index: 2;
 }
 
+.production-card, .research-card, .marketing-card {
+  grid-template-rows: 1fr auto;
+  height: 100%;
+  overflow: hidden;
+}
+
+.production-card:hover, .research-card:hover, .marketing-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 .safety-video-wrap, .maintenance-video-wrap, .production-video-wrap, .research-video-wrap, .marketing-video-wrap {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -2065,6 +2085,23 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.production-video-wrap, .research-video-wrap, .marketing-video-wrap {
+  aspect-ratio: unset;
+  background: var(--turquoise);
+}
+
+.production-video-wrap video,
+.research-video-wrap video,
+.marketing-video-wrap video {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 .safety-card-body, .maintenance-card-body, .production-card-body, .research-card-body, .marketing-card-body {
@@ -2928,7 +2965,7 @@ h2 {
 .video-controls {
   position: absolute;
   bottom: 12px;
-  right: 12px;
+  left: 12px;
   display: flex;
   gap: 8px;
   z-index: 10;
@@ -2968,4 +3005,35 @@ h2 {
 
 .video-btn svg {
   display: block;
+}
+
+.safety-video-wrap:fullscreen,
+.maintenance-video-wrap:fullscreen,
+.production-video-wrap:fullscreen,
+.research-video-wrap:fullscreen,
+.marketing-video-wrap:fullscreen {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.safety-video-wrap:fullscreen video,
+.maintenance-video-wrap:fullscreen video,
+.production-video-wrap:fullscreen video,
+.research-video-wrap:fullscreen video,
+.marketing-video-wrap:fullscreen video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.safety-video-wrap:fullscreen .video-controls,
+.maintenance-video-wrap:fullscreen .video-controls,
+.production-video-wrap:fullscreen .video-controls,
+.research-video-wrap:fullscreen .video-controls,
+.marketing-video-wrap:fullscreen .video-controls {
+  opacity: 1;
 }

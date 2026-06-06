@@ -1266,6 +1266,27 @@ videoWraps.forEach(wrap => {
       video.play().catch(err => console.warn('Play interrupted', err));
     });
   }
+
+  const btnFullscreen = wrap.querySelector('.btn-fullscreen');
+  if (btnFullscreen) {
+    const iconEnter = btnFullscreen.querySelector('.icon-enter-fs');
+    const iconExit = btnFullscreen.querySelector('.icon-exit-fs');
+
+    btnFullscreen.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (document.fullscreenElement === wrap) {
+        document.exitFullscreen().catch(err => console.warn('Exit fullscreen failed', err));
+      } else {
+        wrap.requestFullscreen().catch(err => console.warn('Fullscreen failed', err));
+      }
+    });
+
+    wrap.addEventListener('fullscreenchange', () => {
+      const isFs = document.fullscreenElement === wrap;
+      if (iconEnter) iconEnter.style.display = isFs ? 'none' : 'block';
+      if (iconExit) iconExit.style.display = isFs ? 'block' : 'none';
+    });
+  }
 });
 
 
